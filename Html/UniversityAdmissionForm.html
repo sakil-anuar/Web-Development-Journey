@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Admission Form</title>
+</head>
+
+<body>
+
+    <h1 align="center">University Admission Form</h1>
+
+    <form>
+
+        <!-- Personal Information -->
+        <fieldset>
+
+            <legend>Personal Information</legend>
+
+            <label>Full Name:</label>
+            <br>
+            <input type="text" name="fullname" maxlength="50" required>
+            <br><br>
+
+
+            <label>Email:</label>
+            <br>
+            <input type="email" name="email" required>
+            <br><br>
+
+
+            <label>Date of Birth:</label>
+            <br>
+            <input type="date" name="dob" required>
+            <br><br>
+
+
+            <label>Gender:</label>
+            <br>
+
+            <input type="radio" name="gender" value="Male" required>
+            Male
+
+            <input type="radio" name="gender" value="Female">
+            Female
+
+            <input type="radio" name="gender" value="Other">
+            Other
+
+            <br><br>
+
+
+            <label>Phone Number:</label>
+            <br>
+            <input type="text" name="phone" maxlength="15" required>
+
+        </fieldset>
+
+
+        <br>
+
+
+        <!-- Academic Information -->
+        <fieldset>
+
+            <legend>Academic Information</legend>
+
+
+            <label>Previous School/College Name:</label>
+            <br>
+            <input type="text" name="college" maxlength="100" required>
+
+            <br><br>
+
+
+            <label>SSC Result:</label>
+            <br>
+            <input type="text" name="ssc" maxlength="10" required>
+
+            <br><br>
+
+
+            <label>HSC Result:</label>
+            <br>
+            <input type="text" name="hsc" maxlength="10" required>
+
+
+        </fieldset>
+
+
+        <br>
+
+
+        <!-- Course Selection -->
+        <fieldset>
+
+            <legend>Department Selection</legend>
+
+
+            <label>Select Department:</label>
+            <br>
+
+            <select name="department" required>
+
+                <option value="">Choose Department</option>
+                <option value="CSE">Computer Science & Engineering</option>
+                <option value="EEE">Electrical Engineering</option>
+                <option value="BBA">Business Administration</option>
+                <option value="English">English</option>
+
+            </select>
+
+
+            <br><br>
+
+
+            <label>Interests:</label>
+            <br>
+
+            <input type="checkbox" name="interest" value="Programming">
+            Programming
+
+            <input type="checkbox" name="interest" value="Research">
+            Research
+
+            <input type="checkbox" name="interest" value="Sports">
+            Sports
+
+
+        </fieldset>
+
+
+        <br>
+
+
+        <!-- Document Upload -->
+        <fieldset>
+
+            <legend>Required Documents</legend>
+
+
+            <label>Upload Transcript:</label>
+            <br>
+
+            <input type="file" name="transcript" required>
+
+
+            <br><br>
+
+
+            <label>Upload Resume:</label>
+            <br>
+
+            <input type="file" name="resume">
+
+
+        </fieldset>
+
+
+        <br>
+
+
+        <input type="submit" value="Submit">
+
+        <input type="reset" value="Reset">
+
+
+    </form>
+
+
+</body>
+
+</html>
